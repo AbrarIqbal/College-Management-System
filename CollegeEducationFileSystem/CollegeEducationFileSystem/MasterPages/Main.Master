@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="CollegeEducationFileSystem.MasterPages.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Main</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Stylesheets/Style2.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">College</span> Education System.</h1>
+			</div>
+			<nav>
+                
+				<ul>
+                    <li><asp:LinkButton ID="Admin" runat="server">Approve</asp:LinkButton>
+                        <ul>
+                    <li><asp:LinkButton ID="Add_Parent" runat="server" OnClick="Add_Parent_Click"> Parent</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" > Teacher</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="Add_Student" runat="server" OnClick="Add_Student_Click"> Student</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="Assign_Class" runat="server" OnClick="Assign_Class_Click"> Class</asp:LinkButton></li>
+                   <li><asp:LinkButton ID="Approve_Applications" runat="server" OnClick="Approve_Applications_Click"> Application</asp:LinkButton></li>
+                </ul>
+                    </li>
+
+                    <li>
+                        <asp:LinkButton ID="Add_B" runat="server">Add</asp:LinkButton>
+                        <ul>
+                    <li><asp:LinkButton ID="Add_Payments" runat="server" OnClick="Add_Payments_Click">Payment</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="Add_Notification" runat="server" OnClick="Add_Notification_Click">Notifications</asp:LinkButton></li>  
+                    <li><asp:LinkButton ID="Add_Assignment" runat="server" OnClick="Add_Assignment_Click" >Assignment</asp:LinkButton></li>  
+
+                        </ul>
+                    </li>
+
+                    <li> <asp:LinkButton ID="Noticess" runat="server" OnClick="Noticess_Click">Notifications</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="Home_Panel" runat="server" OnClick="Home_Panel_Click">Home</asp:LinkButton></li> 
+                    <li><asp:LinkButton ID="Logout_B" runat="server" OnClick="Logout_B_Click">Logout</asp:LinkButton></li>                                                          
+			    </ul>
+			</nav>
+		</div>
+	</header>
+
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <footer>
+			<p>College Education System, Copyright &copy; 2017</p>
+	</footer>
+    </form>
+</body>
+</html>

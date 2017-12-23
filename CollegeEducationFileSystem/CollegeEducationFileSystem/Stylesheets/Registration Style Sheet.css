@@ -1,0 +1,116 @@
+﻿#boxess
+{
+	margin-top: 20px;
+    margin-bottom:160px;
+    margin-top:160px;
+
+}
+
+#boxess .box
+{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#boxess .box img 
+{
+	width: 90px;
+}
+
+/*.Button 
+{
+    	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #808080;
+	border: #808080 1px solid;
+	padding:  10px 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+}*/
+.Button 
+{
+	height: 38px;
+    width:100%;
+	background: #35424a;
+	border:0;
+	color: #fff;
+}
+
+.Button:hover 
+{
+
+color: #000000;
+background:#ffffff;
+
+}
+
+
+.container1 {
+
+    width:80%;
+    overflow:hidden;
+    width:50%;
+    /*margin-top:200px;
+    margin-bottom:200px;*/
+    margin: 100px auto;
+    padding-left:120px;
+
+}
+
+h2 
+{
+    margin:0;
+    text-align:center;
+    font-family: Arial;
+    font-size:25px;
+}
+
+input[type=text], input[type=password], input[type=Email], input[type=Date], input[type=Number],input[type=file], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.dropdownlist{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+@media(max-width: 768px)
+{
+
+#boxess .box
+{
+float: none;
+text-align: center;
+width: 100%;
+}
+
+.container1 
+{
+    padding-left:60px;
+}
+}
